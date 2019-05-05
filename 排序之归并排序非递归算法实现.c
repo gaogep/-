@@ -1,4 +1,4 @@
-// 将两个有序的子列归并成一个有序的子列
+// 将两个子列归并成一个有序的子列
 void Merge(int Arr[], int TempArr[], int LeftStart, int RightStart, int RightEnd)
 {
 	int i;
