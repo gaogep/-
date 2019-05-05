@@ -8,11 +8,11 @@ void Merge(int Arr[], int TempArr[], int LeftStart, int RightStart, int RightEnd
 
 	while (LeftStart <= LeftEnd && RightStart <= RightEnd) {
 		if (Arr[LeftStart] <= Arr[RightStart]) TempArr[TempStart++] = Arr[LeftStart++];
-		else TempArr[TempStart] = Arr[RightStart++];
+		else TempArr[TempStart++] = Arr[RightStart++];
 	}
 
 	while (LeftStart <= LeftEnd) TempArr[TempStart++] = Arr[LeftStart++];
-	while (RightStart <= RightEnd) TempArr[TempStart] = Arr[RightStart++];
+	while (RightStart <= RightEnd) TempArr[TempStart++] = Arr[RightStart++];
 
 	// 把排好序的数组倒回去
 	for (i = 0; i < ElementNums; i++, RightEnd--) Arr[RightEnd] = TempArr[RightEnd];
